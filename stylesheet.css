@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  margin: 0;
+}
+
+body{
+  background: #fff;
+  font-family: sans-serif;
+}
+
+nav{
+  background: 	#1C1C1C;
+  width: 250px;
+  float: left;
+  box-shadow: 1px 0px 3px;
+  position: fixed;
+  height: 100%;
+  transition: .3s;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main{
+  float: right;
+  width: calc(100% - 250px);
+  transition: .3s;
+}
+
+.bem-vindo{
+  background-color: 	#363636;
+  padding: 0px;
+  text-align: center;
+  height: 80px;
+  width: 250px;
+  align-items: center;
+}
+
+.bem-vindo img{
+  width: 80px;
+  float: left;
+
+}
+
+.bem-vindo h5{
+  color: white;
+  line-height: 80px;
+}
+
+
+.menu{
+  margin-top: 2px;
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Nova Square', cursive;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu a label{
+  margin-left: 20px;
+}
+
+.menu a:hover{
+  background: black;
+  border-left: 5px solid white;
+  transition: .3s;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  background-image: url(fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+
+}
+
+.container span{
+
+  text-transform: uppercase;
+  display: block;
+  font-family: 'Nova Square', cursive;
+ background-image: linear-gradient(45deg, #f7eFA8, #FA4261);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size:4vw;
+  padding-top: 35vh;
+  text-transform: uppercase;
+  animation: textanimation 2s ease-in-out;
+
+}
+
+@keyframes textanimation {
+  0%{
+    letter-spacing: 15px;
+    color: black;
+    transform: rotateX(90deg);
+  }
+
+50%{
+  color: SteelBlue;
+}
+100%{
+  letter-spacing: 0px;
+  color: Lavender;
+}
+
+}
+
+
+@media (max-width: 800px){
+  nav{
+    width: 0px;
+  }
+
+  main{
+    width: 100%;
+  }
+}
+
+.projects{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #404040;
+  display: none;
+}
+
+/*cards*/
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: 'Nova Square', cursive;
+}
+
+.row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  margin-top: 35px;
+  width: 45%;
+  background: #FF0040;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  animation: textanimationcard 2s ease-in-out;
+}
+
+@keyframes textanimationcard {
+  0%{
+    background: black;
+    transform: scale(0.8);
+
+  }
+
+50%{
+
+}
+100%{
+
+
+}
+
+}
+
+
+.card-header img{
+  width: 100%;
+  height: 300px;
+}
+
+.card-body {
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Nova Square', cursive;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 5px 5px;
+}
+.card-header {
+  text-align: center;
+  padding: 20px 10px;
+  background: linear-gradient(to right, #000, #777);
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

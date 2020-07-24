@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Login</title>
+
+    <link rel="stylesheet" href="wanheda/stylelogin.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  </head>
+
+  <body>
+      <div class="bg-img">
+
+        <div class="container">
+          <div class="content">
+            <form action="wanheda.html">
+              <header>Log in Wanheda.</header>
+            <div class="field">
+              <span class="fa fa-user"></span>
+              <input type="email"  placeholder="Email or Phone" required>
+            </div>
+
+            <div class="field space">
+              <span class="fa fa-lock"></span>
+              <input type="password" class="password" placeholder="Password" required>
+              <span class="show"> SHOW </span>
+            </div>
+            <div class="pass">
+              <a href="#"> Forgot Password</a>
+            </div>
+            <div class="field">
+              <input type="submit" value="LOGIN">
+            </div>
+            <div class="login"> Or login with  </div>
+            <div class="link">
+              <div class="facebook">
+                <i class="fab fa-facebook-f"> <span> Facebook</span> </i>
+              </div>
+              <div class="instagram">
+                <i class="fab fa-instagram"> <span> Instagram</span> </i>
+              </div>
+            </div>
+
+            <div class="signup">  Don't have account?
+              <a href="#">Signup Now</a>
+            </div>
+            </form>
+          </div>
+        </div>
+        </div>
+
+
+      <script>
+        const pass_field = document.querySelector('.password');
+        const show_btn = document.querySelector('.show');
+        show_btn.addEventListener('click',function(){
+          if (pass_field.type === "password") {
+            pass_field.type = "text";
+            show_btn.style.color = "#3498db";
+            show_btn.textContent = "HIDE";
+
+          }else {
+            pass_field.type = "password";
+            show_btn.style.color = "#222";
+            show_btn.textContent = "SHOW";
+
+          }
+        })
+      </script>
+
+  </body>
+</html>

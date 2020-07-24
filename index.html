@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <div class="bem-vindo">
+          <img src="logo.png" alt="">
+          <h5> Be welcome!</h5>
+      </div>
+        <div class="menu">
+            <a href="#" id="home"><label>Home</label></a>
+            <a href="#" id="projects"><label>Projects</label></a>
+            <a href="#"><label>About</label></a>
+            <a href="#"><label>Contact</label></a>
+        </div>
+    </nav>
+
+    <main>
+      <div class="container" id="container">
+        <span class="text1"> Welcome to my portfolio <br> I'm Lucas Moura</span>
+
+      </div>
+
+      <div class="projects" id="container-projetcs">
+
+ <div class="row">
+
+   <div class="card">
+     <div class="card-header">
+       <img src="projeto1.png" alt="">
+     </div>
+     <div class="card-body">
+       <p>
+         Lorem ipsum.
+       </p>
+       <a href="wanheda.html" class="btn">View more</a>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header">
+       <h1>LOADING...</h1>
+     </div>
+     <div class="card-body">
+       <p>
+         Lorem ipsum.
+       </p>
+       <a href="#" class="btn">Read more</a>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header">
+       <h1>LOADING...</h1>
+     </div>
+     <div class="card-body">
+       <p>
+         Lorem ipsum.
+       </p>
+       <a href="index.html" class="btn">Read more</a>
+     </div>
+   </div>
+
+
+ </div>
+
+      </div>
+    </main>
+
+
+
+    <script>
+      $(document).ready(function(){
+        $("#home").click(function(){
+          $("#container").show();
+
+        });
+
+        $("#projects").click(function(){
+          $("#container").hide();
+        });
+      });
+    </script>
+
+    <script>
+    window.onload = function() {
+       var div = document.querySelector("div[class='projects']");
+       var input = document.querySelector("#projects");
+       var input2 = document.querySelector("#home");
+
+       input.onclick = function() {
+            div.style.display = "block";
+       };
+
+       input2.onclick = function() {
+            div.style.display = "none";
+       };
+  };
+    </script>
+
+
+
+  </body>
+</html>
