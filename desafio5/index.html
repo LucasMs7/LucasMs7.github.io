@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="image/logo.svg" alt="">
+        </div>
+        <div class="header-nav">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>hayao miyazaki</h2>
+            <h1>A viagem de chihiro</h1>
+            <p>Chihiro chega a um mundo mágico dominado por uma bruxa.
+                Aqueles que a desobedecem são transformados em animais.
+            </p>
+            <div class="main-content-links">
+                    <button class="btn-skew">
+                        <i class="fas fa-play skew-fix"></i>
+                        <a href="#">Assista agora</a>
+                    </button>
+                    <button class="btn-skew transparent" id="button" onclick='Mudarestado()'>
+                        <a href="#">Assista o trailer</a>
+                    </button>
+            </div>
+        </div>
+        <div class="content-image">
+            <img src="image/ilustracao.png" alt="">
+        </div>
+        
+    </div>
+    <div class="trailer" id="video" onclick='Mudarestado()'>
+        <iframe width="60%" height="60%" src="https://www.youtube.com/embed/ByXuk9QqQkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
